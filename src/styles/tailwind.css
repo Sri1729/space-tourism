@@ -13,3 +13,8 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

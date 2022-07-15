@@ -22,7 +22,7 @@ export const Header = () => {
       <div className="hidden flex-1 h-px opacity-25 bg-white mx-5 relative left-12 z-10 lg:flex" />
 
       {/* Menu Desktop and Tab*/}
-      <div className="hidden flex-row w-fit px-10 align-middle items-center justify-center bg-headerMenuBgColor backdrop-blur-lg md:flex">
+      <div className="hidden flex-row min-w-[50%] px-10 align-middle items-center justify-center bg-headerMenuBgColor backdrop-blur-lg md:flex">
         {menu.map((item) => (
           <button className="border-b-2 border-white ml-2 p-4">
             <span className="text-white">{`${item.id} ${item.name}`}</span>

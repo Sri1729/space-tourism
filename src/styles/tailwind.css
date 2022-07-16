@@ -16,5 +16,7 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    width: 100%;
   }
 }

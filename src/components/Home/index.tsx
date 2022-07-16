@@ -2,7 +2,7 @@ import React from "react";
 
 export const HomeComp = () => {
   return (
-    <div className="flex flex-1 flex-col h-auto justify-between items-center md:justify-around lg:flex-row lg:items-end lg:h-fit lg:self-center lg:relative lg:top-16">
+    <div className="flex flex-1 flex-col h-auto justify-between items-center md:justify-around lg:flex-row lg:items-end lg:h-fit lg:self-center lg:relative lg:top-12">
       <div className="w-full text-center text-white md:w-2/3 lg:w-1/3 lg:text-start">
         <p className="text-base text-textSecondary md:text-xl lg:text-3xl">
           So, you want to travel to

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Logo, HamburgerIcon, CloseIcon } from "../../assets";
 import { HeaderRoute } from "../../types";
 
@@ -30,15 +31,15 @@ export const Header = ({ from }: HeaderProps) => {
         {/* Menu Desktop and Tab*/}
         <div className="hidden flex-row min-w-[50%] px-10 align-middle items-center justify-center bg-headerMenuBgColor backdrop-blur-lg md:flex">
           {menu.map((item) => (
-            <a
-              href={item.route}
+            <Link
+              to={item.route}
               className={`${
                 from === item.name ? "border-b-2 border-white" : ""
               } ml-2 p-4`}
             >
               <span className="text-white">{`${item.id} ${item.name}`}</span>
               {/* <div className="mt-2 h-0.5 bg-white" /> */}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -71,14 +72,14 @@ export const Header = ({ from }: HeaderProps) => {
 
               <div className="flex flex-1 flex-col items-start">
                 {menu.map((item) => (
-                  <a
-                    href={item.route}
+                  <Link
+                    to={item.route}
                     className={`flex w-full ${
                       from === item.name ? "border-r-4 border-white" : ""
                     } my-5`}
                   >
                     <span className="text-white pl-10">{`${item.id} ${item.name}`}</span>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

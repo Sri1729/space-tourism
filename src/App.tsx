@@ -1,10 +1,10 @@
 import React from "react";
-import { Home } from "./routes/Home";
+import { MyRoutes } from "./routes";
 
 function App() {
   return (
     <div className="w-screen h-screen">
-      <Home />
+      <MyRoutes />
     </div>
   );
 }

@@ -33,9 +33,9 @@ export const Header = ({ from }: HeaderProps) => {
           {menu.map((item) => (
             <Link
               to={item.route}
-              className={`${
-                from === item.name ? "border-b-2 border-white" : ""
-              } ml-2 p-4`}
+              className={`border-b-2 border-white ${
+                from === item.name ? "border-opacity-100" : "border-opacity-0"
+              } ml-2 p-4 hover:border-opacity-50`}
             >
               <span className="text-white">{`${item.id} ${item.name}`}</span>
               {/* <div className="mt-2 h-0.5 bg-white" /> */}
@@ -74,9 +74,11 @@ export const Header = ({ from }: HeaderProps) => {
                 {menu.map((item) => (
                   <Link
                     to={item.route}
-                    className={`flex w-full ${
-                      from === item.name ? "border-r-4 border-white" : ""
-                    } my-5`}
+                    className={`flex w-full border-r-4 border-white ${
+                      from === item.name
+                        ? "border-opacity-100"
+                        : "border-opacity-0"
+                    } my-5 hover:border-opacity-50`}
                   >
                     <span className="text-white pl-10">{`${item.id} ${item.name}`}</span>
                   </Link>

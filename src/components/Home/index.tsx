@@ -20,7 +20,7 @@ export const HomeComp = () => {
         </p>
       </div>
 
-      <button className="flex w-40 h-40 rounded-full text-xl font-normal bg-white items-center justify-center md:h-56 md:w-56 md:text-3xl lg:h-64 lg:w-64">
+      <button className="flex w-40 h-40 rounded-full text-xl font-normal bg-white items-center justify-center md:h-56 md:w-56 md:text-3xl lg:h-64 lg:w-64 hover:drop-shadow-exploreBtn">
         Explore
       </button>
     </div>

@@ -4,7 +4,7 @@ import { HeaderRoute } from "../../types";
 
 export const Home = () => {
   return (
-    <div className="flex flex-1 flex-col h-full bg-homeMobileBG bg-cover md:bg-homeTabBG lg:bg-homeDesktopBG">
+    <div className="flex flex-1 flex-col h-full w-full bg-homeMobileBG bg-cover md:bg-homeTabBG lg:bg-homeDesktopBG">
       <div>
         <Header from={HeaderRoute.Home} />
       </div>

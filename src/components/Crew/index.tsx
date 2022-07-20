@@ -32,7 +32,7 @@ export const CrewComp = () => {
                   onClick={() => setCrewMem(item)}
                   className={`w-3 h-3 mx-4 rounded-full bg-white ${
                     item === crewMem ? "opacity-100" : "opacity-20"
-                  }`}
+                  } hover:opacity-50`}
                 />
               </div>
             ))}

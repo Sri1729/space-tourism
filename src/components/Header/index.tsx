@@ -56,7 +56,7 @@ export const Header = ({ from }: HeaderProps) => {
           <div
             className={`fixed flex flex-row top-0 right-0 h-screen w-full ease-in-out duration-300 ${
               isHamMenuOpen ? "translate-x-0 " : "translate-x-full"
-            }`}
+            } z-10`}
           >
             <div
               className="flex flex-1"

@@ -30,6 +30,7 @@ module.exports = {
         headerMenuBgColor: "rgba(255, 255, 255, 0.04)",
         textPrimary: "#ffffff",
         textSecondary: "#D0D6F9",
+        divider: "#383B4B",
       },
     },
   },

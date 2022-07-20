@@ -9,4 +9,22 @@ import Europa from "./image-europa.webp";
 import Mars from "./image-mars.webp";
 import Titan from "./image-titan.webp";
 
-export { Logo, HamburgerIcon, CloseIcon, Moon, Mars, Europa, Titan };
+// Crew Page
+import Anousheh from "./image-anousheh-ansari.webp";
+import Douglas from "./image-douglas-hurley.webp";
+import Mark from "./image-mark-shuttleworth.webp";
+import Victor from "./image-victor-glover.webp";
+
+export {
+  Logo,
+  HamburgerIcon,
+  CloseIcon,
+  Moon,
+  Mars,
+  Europa,
+  Titan,
+  Anousheh,
+  Douglas,
+  Mark,
+  Victor,
+};

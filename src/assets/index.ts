@@ -15,6 +15,15 @@ import Douglas from "./image-douglas-hurley.webp";
 import Mark from "./image-mark-shuttleworth.webp";
 import Victor from "./image-victor-glover.webp";
 
+// Technology Page
+
+import LaunchVehicle from "./image-launch-vehicle-landscape.jpg";
+import SpaceCapsule from "./image-space-capsule-landscape.jpg";
+import SpacePort from "./image-spaceport-landscape.jpg";
+import LaunchVehicleDesk from "./image-launch-vehicle-portrait.jpg";
+import SpaceCapsuleDesk from "./image-space-capsule-portrait.jpg";
+import SpacePortDesk from "./image-spaceport-portrait.jpg";
+
 export {
   Logo,
   HamburgerIcon,
@@ -27,4 +36,10 @@ export {
   Douglas,
   Mark,
   Victor,
+  LaunchVehicle,
+  SpaceCapsule,
+  SpacePort,
+  LaunchVehicleDesk,
+  SpaceCapsuleDesk,
+  SpacePortDesk,
 };

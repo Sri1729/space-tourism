@@ -83,7 +83,10 @@ export const Header = ({ from }: HeaderProps) => {
                         : "border-opacity-0"
                     } my-5 hover:border-opacity-50`}
                   >
-                    <span className="text-white pl-10">{`${item.id} ${item.name}`}</span>
+                    <span className="text-white font-extrabold tracking-widest pl-10">
+                      {`${item.id} `}
+                      <span className="font-normal">{item.name}</span>
+                    </span>
                   </Link>
                 ))}
               </div>

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   theme: {
     screens: {
@@ -7,6 +8,10 @@ module.exports = {
       lg: "1024px",
     },
     extend: {
+      fontFamily: {
+        sans: ["Barlow"],
+        heading: ["Bellefair"],
+      },
       backgroundImage: {
         homeDesktopBG: "url('/src/assets/background-home-desktop.jpg')",
         homeTabBG: "url('/src/assets/background-home-tablet.jpg')",

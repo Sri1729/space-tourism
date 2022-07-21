@@ -37,7 +37,10 @@ export const Header = ({ from }: HeaderProps) => {
                 from === item.name ? "border-opacity-100" : "border-opacity-0"
               } ml-2 p-4 hover:border-opacity-50`}
             >
-              <span className="text-white">{`${item.id} ${item.name}`}</span>
+              <span className="text-white font-extrabold tracking-widest">
+                {`${item.id} `}
+                <span className="font-normal">{item.name}</span>
+              </span>
               {/* <div className="mt-2 h-0.5 bg-white" /> */}
             </Link>
           ))}

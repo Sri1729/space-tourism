@@ -7,7 +7,7 @@ export const CrewComp = () => {
     <div className="flex flex-1 flex-col items-center lg:mx-36">
       {/* Heading */}
       <div className="flex md:self-start">
-        <p className="h-fit text-white text-base md:text-xl lg:text-3xl">
+        <p className="h-fit text-white tracking-widest text-base md:text-xl lg:text-3xl">
           <span className="opacity-25 font-bold">02</span>
           <span className="ml-3 font-normal uppercase">Meet Your Crew</span>
         </p>
@@ -40,10 +40,10 @@ export const CrewComp = () => {
 
           {/* Description */}
           <div className="flex flex-1 flex-col items-center text-center text-white lg:items-start lg:w-3/4 lg:text-start">
-            <span className="opacity-50 text-base md:text-2xl lg:text-3xl">
+            <span className="opacity-50 font-heading uppercase tracking-widest text-base md:text-2xl lg:text-3xl">
               {crewMem.role}
             </span>
-            <span className="text-2xl mt-2 md:text-4xl lg:text-6xl">
+            <span className="text-2xl font-heading uppercase tracking-wide mt-2 md:text-4xl lg:text-5xl">
               {crewMem.name}
             </span>
             <span className="text-textSecondary text-base mt-4 lg:text-lg">

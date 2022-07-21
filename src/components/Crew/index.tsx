@@ -4,7 +4,7 @@ import { crew } from "../../constants";
 export const CrewComp = () => {
   const [crewMem, setCrewMem] = useState(crew[0]);
   return (
-    <div className="flex flex-1 flex-col items-center lg:mx-36">
+    <div className="flex flex-1 flex-col items-center lg:mx-28">
       {/* Heading */}
       <div className="flex md:self-start">
         <p className="h-fit text-white tracking-widest text-base md:text-xl lg:text-3xl">
@@ -13,17 +13,17 @@ export const CrewComp = () => {
         </p>
       </div>
       {/* Body */}
-      <div className="flex flex-1 flex-col w-full items-center my-8 md:flex-col-reverse md:w-3/4 md:mb-0 lg:w-full lg:flex-row-reverse">
+      <div className="flex flex-1 flex-col w-full items-center my-8 md:flex-col-reverse md:w-3/4 md:mb-0 lg:my-0 lg:w-full lg:flex-row-reverse">
         {/* Image */}
-        <div className="flex flex-1 w-full justify-center items-end border-b-2 border-divider md:border-b-0">
+        <div className="flex w-full justify-center items-end border-b-2 border-divider md:border-b-0 lg:h-full lg:w-fit lg:justify-end">
           <img
             src={crewMem.images.webp}
             alt={`${crewMem.name}`}
-            className="w-fit h-56 md:h-[450px]"
+            className="w-fit h-56 md:h-[650px] lg:w-10/12 lg:h-fit"
           />
         </div>
 
-        <div className="flex flex-1 flex-col items-center md:flex-col-reverse lg:items-start lg:h-full lg:py-10">
+        <div className="flex flex-1 flex-col items-center md:flex-col-reverse lg:items-start lg:h-full lg:pt-32 lg:pb-20">
           {/* Dot Nav */}
           <div className="flex my-8">
             {crew.map((item) => (

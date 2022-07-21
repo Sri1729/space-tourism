@@ -7,7 +7,7 @@ const TechonologyComp = () => {
     <div className="flex flex-1 flex-col items-center lg:mt-10 lg:ml-32">
       {/* Title */}
       <div className="flex justify-center md:m-5 md:self-start lg:flex-col lg:w-fit">
-        <p className="h-fit text-white text-base md:text-xl lg:text-3xl">
+        <p className="h-fit text-white tracking-widest text-base md:text-xl lg:text-3xl">
           <span className="opacity-25 font-bold">03</span>
           <span className="ml-3 font-normal uppercase">Space Launch 101</span>
         </p>
@@ -36,7 +36,7 @@ const TechonologyComp = () => {
                 onClick={() => setTech(item)}
                 className={`flex items-center justify-center w-10 h-10 rounded-full border-2 border-opacity-50 border-white ${
                   item === tech ? "text-black bg-white" : "text-white bg-black"
-                } hover:border-opacity-100 mx-2 text-base md:w-16 md:h-16 md:mx-4 md:text-2xl lg:w-20 lg:h-20 lg:text-4xl lg:my-4`}
+                } hover:border-opacity-100 mx-2 text-base font-heading md:w-16 md:h-16 md:mx-4 md:text-2xl lg:w-20 lg:h-20 lg:text-4xl lg:my-4`}
               >
                 {index + 1}
               </button>
@@ -45,13 +45,13 @@ const TechonologyComp = () => {
 
           {/* Body */}
           <div className="flex flex-1 flex-col text-center text-white md:w-3/4 lg:my-6 lg:text-start lg:mx-20 lg:w-full">
-            <span className="uppercase text-sm md:text-base">
+            <span className="uppercase text-sm tracking-widest leading-5 font-normal md:text-base">
               The terminology...
             </span>
-            <span className="uppercase text-2xl mt-4 mb-4 md:text-4xl lg:text-6xl">
+            <span className="uppercase text-2xl mt-4 mb-4 font-heading tracking-wider md:text-4xl lg:text-6xl">
               {tech.name}
             </span>
-            <span className="text-base text-textSecondary mx-5 lg:mx-0 lg:text-lg">
+            <span className="text-base text-textSecondary mx-5 leading-8 tracking-wide lg:mx-0 lg:text-lg">
               {tech.description}
             </span>
           </div>

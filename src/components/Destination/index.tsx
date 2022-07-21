@@ -36,9 +36,9 @@ export const DestinationComp = () => {
           {destinations.map((item) => (
             <button
               onClick={() => setDestination(item)}
-              className={`text-textSecondary text-sm tracking-widest p-2 ml-6 border-b-2 border-white ${
+              className={`text-textSecondary text-sm tracking-widest p-2 ml-3 border-b-2 border-white ${
                 item === destination ? "border-opacity-100" : "border-opacity-0"
-              } hover:border-opacity-50 md:text-base`}
+              } hover:border-opacity-50 md:ml-6 md:text-base`}
             >
               {item.name}
             </button>

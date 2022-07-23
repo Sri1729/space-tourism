@@ -1,6 +1,6 @@
 import React from "react";
-import { Header } from "../../components";
-import TechonologyComp from "../../components/Technology";
+import { Header } from "../../common";
+import { TechonologyComp } from "../../components";
 import { HeaderRoute } from "../../types";
 
 function Technology() {

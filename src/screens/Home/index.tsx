@@ -1,6 +1,7 @@
 import React from "react";
-import { Header, HomeComp } from "../../components";
+import { Header } from "../../common";
 import { HeaderRoute } from "../../types";
+import { HomeComp } from "../../components";
 
 export const Home = () => {
   return (

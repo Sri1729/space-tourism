@@ -19,7 +19,6 @@ export const destinations = [
   {
     name: "Moon",
     images: {
-      png: "./assets/destination/image-moon.png",
       webp: Moon,
     },
     description:
@@ -30,7 +29,6 @@ export const destinations = [
   {
     name: "Mars",
     images: {
-      png: "./assets/destination/image-mars.png",
       webp: Mars,
     },
     description:
@@ -41,7 +39,6 @@ export const destinations = [
   {
     name: "Europa",
     images: {
-      png: "./assets/destination/image-europa.png",
       webp: Europa,
     },
     description:
@@ -52,7 +49,6 @@ export const destinations = [
   {
     name: "Titan",
     images: {
-      png: "./assets/destination/image-titan.png",
       webp: Titan,
     },
     description:
@@ -66,7 +62,6 @@ export const crew = [
   {
     name: "Douglas Hurley",
     images: {
-      png: "./assets/crew/image-douglas-hurley.png",
       webp: Douglas,
     },
     role: "Commander",
@@ -75,7 +70,6 @@ export const crew = [
   {
     name: "Mark Shuttleworth",
     images: {
-      png: "./assets/crew/image-mark-shuttleworth.png",
       webp: Mark,
     },
     role: "Mission Specialist",
@@ -84,7 +78,6 @@ export const crew = [
   {
     name: "Victor Glover",
     images: {
-      png: "./assets/crew/image-victor-glover.png",
       webp: Victor,
     },
     role: "Pilot",
@@ -93,7 +86,6 @@ export const crew = [
   {
     name: "Anousheh Ansari",
     images: {
-      png: "./assets/crew/image-anousheh-ansari.png",
       webp: Anousheh,
     },
     role: "Flight Engineer",

@@ -1,28 +1,28 @@
 // Home Page
-import Logo from "./logo.svg";
-import HamburgerIcon from "./icon-hamburger.svg";
-import CloseIcon from "./icon-close.svg";
+import Logo from "./icons/logo.svg";
+import HamburgerIcon from "./icons/hamburger.svg";
+import CloseIcon from "./icons/close.svg";
 
 // Destination Page
-import Moon from "./image-moon.webp";
-import Europa from "./image-europa.webp";
-import Mars from "./image-mars.webp";
-import Titan from "./image-titan.webp";
+import Moon from "./images/moon.webp";
+import Europa from "./images/europa.webp";
+import Mars from "./images/mars.webp";
+import Titan from "./images/titan.webp";
 
 // Crew Page
-import Anousheh from "./image-anousheh-ansari.webp";
-import Douglas from "./image-douglas-hurley.webp";
-import Mark from "./image-mark-shuttleworth.webp";
-import Victor from "./image-victor-glover.webp";
+import Anousheh from "./images/anousheh-ansari.webp";
+import Douglas from "./images/douglas-hurley.webp";
+import Mark from "./images/mark-shuttleworth.webp";
+import Victor from "./images/victor-glover.webp";
 
 // Technology Page
 
-import LaunchVehicle from "./image-launch-vehicle-landscape.jpg";
-import SpaceCapsule from "./image-space-capsule-landscape.jpg";
-import SpacePort from "./image-spaceport-landscape.jpg";
-import LaunchVehicleDesk from "./image-launch-vehicle-portrait.jpg";
-import SpaceCapsuleDesk from "./image-space-capsule-portrait.jpg";
-import SpacePortDesk from "./image-spaceport-portrait.jpg";
+import LaunchVehicle from "./images/launch-vehicle-landscape.jpg";
+import SpaceCapsule from "./images/space-capsule-landscape.jpg";
+import SpacePort from "./images/spaceport-landscape.jpg";
+import LaunchVehicleDesk from "./images/launch-vehicle-portrait.jpg";
+import SpaceCapsuleDesk from "./images/space-capsule-portrait.jpg";
+import SpacePortDesk from "./images/spaceport-portrait.jpg";
 
 export {
   Logo,

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { technology } from "../../constants";
 
-const TechonologyComp = () => {
+export const TechonologyComp = () => {
   const [tech, setTech] = useState(technology[0]);
   return (
     <div className="flex flex-1 flex-col items-center lg:ml-28">
@@ -60,5 +60,3 @@ const TechonologyComp = () => {
     </div>
   );
 };
-
-export default TechonologyComp;

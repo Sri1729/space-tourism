@@ -13,23 +13,23 @@ module.exports = {
         heading: ["Bellefair"],
       },
       backgroundImage: {
-        homeDesktopBG: "url('/src/assets/background-home-desktop.jpg')",
-        homeTabBG: "url('/src/assets/background-home-tablet.jpg')",
-        homeMobileBG: "url('/src/assets/background-home-mobile.jpg')",
+        homeDesktopBG: "url('/src/assets/background/home-desktop.jpg')",
+        homeTabBG: "url('/src/assets/background/home-tablet.jpg')",
+        homeMobileBG: "url('/src/assets/background/home-mobile.jpg')",
         destinationDesktopBG:
-          "url('/src/assets/background-destination-desktop.jpg')",
+          "url('/src/assets/background/destination-desktop.jpg')",
         destinationTabBG:
-          "url('/src/assets/background-destination-tablet.jpg')",
+          "url('/src/assets/background/destination-tablet.jpg')",
         destinationMobileBG:
-          "url('/src/assets/background-destination-mobile.jpg')",
-        crewDesktopBG: "url('/src/assets/background-crew-desktop.jpg')",
-        crewTabBG: "url('/src/assets/background-crew-tablet.jpg')",
-        crewMobileBG: "url('/src/assets/background-crew-mobile.jpg')",
+          "url('/src/assets/background/destination-mobile.jpg')",
+        crewDesktopBG: "url('/src/assets/background/crew-desktop.jpg')",
+        crewTabBG: "url('/src/assets/background/crew-tablet.jpg')",
+        crewMobileBG: "url('/src/assets/background/crew-mobile.jpg')",
         technologyDesktopBG:
-          "url('/src/assets/background-technology-desktop.jpg')",
-        technologyTabBG: "url('/src/assets/background-technology-tablet.jpg')",
+          "url('/src/assets/background/technology-desktop.jpg')",
+        technologyTabBG: "url('/src/assets/background/technology-tablet.jpg')",
         technologyMobileBG:
-          "url('/src/assets/background-technology-mobile.jpg')",
+          "url('/src/assets/background/technology-mobile.jpg')",
       },
       colors: {
         headerMenuBgColor: "rgba(255, 255, 255, 0.04)",

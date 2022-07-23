@@ -1,6 +1,7 @@
 import React from "react";
-import { DestinationComp, Header } from "../../components";
+import { Header } from "../../common";
 import { HeaderRoute } from "../../types";
+import { DestinationComp } from "../../components";
 
 function Destination() {
   return (

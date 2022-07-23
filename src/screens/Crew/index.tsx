@@ -1,6 +1,6 @@
 import React from "react";
-import { Header } from "../../components";
-import { CrewComp } from "../../components/Crew";
+import { Header } from "../../common";
+import { CrewComp } from "../../components";
 import { HeaderRoute } from "../../types";
 
 function Crew() {

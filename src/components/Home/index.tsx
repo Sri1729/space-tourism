@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export const HomeComp = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-1 flex-col h-auto justify-between items-center md:justify-around lg:flex-row lg:items-center lg:h-fit lg:self-center lg:relative lg:top-12 lg:mx-40">
       <div className="flex flex-1 flex-col items-center">
@@ -23,7 +26,12 @@ export const HomeComp = () => {
       </div>
 
       <div className="flex flex-1 items-center justify-center">
-        <button className="flex w-40 h-40 rounded-full text-xl font-normal bg-white items-center justify-center uppercase tracking-widest font-heading md:h-56 md:w-56 md:text-3xl lg:h-64 lg:w-64 transition-all duration-300 ease-in hover:shadow-[0_0_0_88px_rgba(255,255,255,0.1)]">
+        <button
+          onClick={() => {
+            navigate("/destination");
+          }}
+          className="flex w-40 h-40 rounded-full text-xl font-normal bg-white items-center justify-center uppercase tracking-widest font-heading md:h-56 md:w-56 md:text-3xl lg:h-64 lg:w-64 transition-all duration-300 ease-in hover:shadow-[0_0_0_88px_rgba(255,255,255,0.1)]"
+        >
           Explore
         </button>
       </div>

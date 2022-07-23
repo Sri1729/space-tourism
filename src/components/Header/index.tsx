@@ -76,6 +76,7 @@ export const Header = ({ from }: HeaderProps) => {
               <div className="flex flex-1 flex-col items-start">
                 {menu.map((item) => (
                   <Link
+                    onClick={() => setIsHamMenuOpen(false)}
                     to={item.route}
                     className={`flex w-full border-r-4 border-white ${
                       from === item.name

@@ -9,7 +9,7 @@ function Technology() {
       <div>
         <Header from={HeaderRoute.Technology} />
       </div>
-      <div>
+      <div className="flex flex-1 mt-6 bg-transparent">
         <TechonologyComp />
       </div>
     </div>

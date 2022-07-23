@@ -4,16 +4,16 @@ import { technology } from "../../constants";
 const TechonologyComp = () => {
   const [tech, setTech] = useState(technology[0]);
   return (
-    <div className="flex flex-1 flex-col items-center lg:mt-10 lg:ml-32">
+    <div className="flex flex-1 flex-col items-center lg:ml-28">
       {/* Title */}
-      <div className="flex justify-center md:m-5 md:self-start lg:flex-col lg:w-fit">
-        <p className="h-fit text-white tracking-widest text-base md:text-xl lg:text-3xl">
+      <div className="flex justify-center md:self-start">
+        <p className="h-fit text-white tracking-widest ml-6 text-base md:text-xl lg:text-3xl">
           <span className="opacity-25 font-bold">03</span>
           <span className="ml-3 font-normal uppercase">Space Launch 101</span>
         </p>
       </div>
 
-      <div className="flex flex-col items-center lg:flex-row-reverse lg:justify-between lg:items-start">
+      <div className="flex flex-col items-center lg:flex-row-reverse lg:justify-between lg:items-start lg:mt-10">
         {/* Image */}
         <div className="flex w-full my-8 lg:my-0 lg:w-fit lg:justify-end lg:self-start">
           <img

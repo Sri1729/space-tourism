@@ -3,7 +3,7 @@ import { MyRoutes } from "./routes";
 
 function App() {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen scrollbar-hide">
       <MyRoutes />
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { crew } from "../../constants";
+import { crew, scalingOpacity } from "../../constants";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const CrewComp = () => {
   const [crewMem, setCrewMem] = useState(crew[0]);
@@ -15,13 +16,23 @@ export const CrewComp = () => {
       {/* Body */}
       <div className="flex flex-1 flex-col w-full items-center my-8 md:flex-col-reverse md:w-3/4 md:mb-0 lg:my-0 lg:w-full lg:flex-row-reverse">
         {/* Image */}
-        <div className="flex w-full justify-center items-end border-b-2 border-divider md:border-b-0 lg:h-full lg:w-fit lg:justify-end">
-          <img
-            src={crewMem.images.webp}
-            alt={`${crewMem.name}`}
-            className="w-fit h-56 md:h-[650px] lg:w-10/12 lg:h-fit"
-          />
-        </div>
+
+        <AnimatePresence exitBeforeEnter>
+          <motion.div
+            key={`img-${crewMem.name}`}
+            variants={scalingOpacity}
+            initial="initial"
+            animate="visible"
+            exit="exit"
+            className="flex w-full justify-center items-end border-b-2 border-divider md:border-b-0 lg:h-full lg:w-fit lg:justify-end"
+          >
+            <img
+              src={crewMem.images.webp}
+              alt={`${crewMem.name}`}
+              className="w-fit h-56 md:h-[650px] lg:w-10/12 lg:h-fit"
+            />
+          </motion.div>
+        </AnimatePresence>
 
         <div className="flex flex-1 flex-col items-center md:flex-col-reverse lg:items-start lg:h-full lg:pt-32 lg:pb-20">
           {/* Dot Nav */}
@@ -39,17 +50,26 @@ export const CrewComp = () => {
           </div>
 
           {/* Description */}
-          <div className="flex flex-1 flex-col items-center text-center text-white lg:items-start lg:w-3/4 lg:text-start">
-            <span className="opacity-50 font-heading uppercase tracking-widest text-base md:text-2xl lg:text-3xl">
-              {crewMem.role}
-            </span>
-            <span className="text-2xl font-heading uppercase tracking-wide mt-2 md:text-4xl lg:text-5xl">
-              {crewMem.name}
-            </span>
-            <span className="text-textSecondary text-base mt-4 lg:text-lg">
-              {crewMem.bio}
-            </span>
-          </div>
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              key={`desc-${crewMem.name}`}
+              variants={scalingOpacity}
+              initial="initial"
+              animate="visible"
+              exit="exit"
+              className="flex flex-1 flex-col items-center text-center text-white lg:items-start lg:w-3/4 lg:text-start"
+            >
+              <span className="opacity-50 font-heading uppercase tracking-widest text-base md:text-2xl lg:text-3xl">
+                {crewMem.role}
+              </span>
+              <span className="text-2xl font-heading uppercase tracking-wide mt-2 md:text-4xl lg:text-5xl">
+                {crewMem.name}
+              </span>
+              <span className="text-textSecondary text-base mt-4 lg:text-lg">
+                {crewMem.bio}
+              </span>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+import { Variant } from "framer-motion";
+
 import {
   Anousheh,
   Douglas,
@@ -122,3 +124,23 @@ export const technology = [
       "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
   },
 ];
+
+// animation variants
+export const scalingOpacity: { [Key: string]: Variant } = {
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { ease: "easeIn", duration: 0.3 },
+  },
+  initial: { opacity: 0, scale: 0.5 },
+  exit: { opacity: 0, transition: { ease: "easeOut", duration: 0.3 } },
+};
+
+export const opacity: { [Key: string]: Variant } = {
+  visible: {
+    opacity: 1,
+    transition: { ease: "easeIn", duration: 0.5 },
+  },
+  initial: { opacity: 0 },
+  exit: { opacity: 0, transition: { ease: "easeOut", duration: 0.25 } },
+};

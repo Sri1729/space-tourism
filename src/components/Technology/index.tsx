@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { technology } from "../../constants";
+import {
+  opacityVariant,
+  scalingOpacityVariant,
+  technology,
+} from "../../constants";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const TechonologyComp = () => {
   const [tech, setTech] = useState(technology[0]);
@@ -15,19 +20,27 @@ export const TechonologyComp = () => {
 
       <div className="flex flex-col items-center lg:flex-row-reverse lg:justify-between lg:items-start lg:mt-10">
         {/* Image */}
-        <div className="flex w-full my-8 lg:my-0 lg:w-fit lg:justify-end lg:self-start">
-          <img
-            src={tech.images.landscape}
-            alt={tech.name}
-            className="w-full h-fit lg:hidden"
-          />
-          <img
-            src={tech.images.portrait}
-            alt={tech.name}
-            className="hidden w-11/12 h-full lg:flex"
-          />
-        </div>
-
+        <AnimatePresence exitBeforeEnter>
+          <motion.div
+            key={`img-${tech.name}`}
+            variants={scalingOpacityVariant}
+            initial="initial"
+            animate="visible"
+            exit="exit"
+            className="flex w-full my-8 lg:my-0 lg:w-fit lg:justify-end lg:self-start"
+          >
+            <img
+              src={tech.images.landscape}
+              alt={tech.name}
+              className="w-full h-fit lg:hidden"
+            />
+            <img
+              src={tech.images.portrait}
+              alt={tech.name}
+              className="hidden w-11/12 h-full lg:flex"
+            />
+          </motion.div>
+        </AnimatePresence>
         <div className="flex flex-1 flex-col items-center lg:flex-row lg:items-start lg:self-center">
           {/* Nav */}
           <div className="flex flex-1 mb-7 lg:flex-col lg:flex-none">
@@ -44,17 +57,26 @@ export const TechonologyComp = () => {
           </div>
 
           {/* Body */}
-          <div className="flex flex-1 flex-col text-center text-white md:w-3/4 lg:my-6 lg:text-start lg:mx-20 lg:w-full">
-            <span className="uppercase text-sm tracking-widest leading-5 font-normal md:text-base">
-              The terminology...
-            </span>
-            <span className="uppercase text-2xl mt-4 mb-4 font-heading tracking-wider md:text-4xl lg:text-6xl">
-              {tech.name}
-            </span>
-            <span className="text-base text-textSecondary mx-5 leading-8 tracking-wide lg:mx-0 lg:text-lg">
-              {tech.description}
-            </span>
-          </div>
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              key={`info-${tech.name}`}
+              variants={opacityVariant}
+              initial="initial"
+              animate="visible"
+              exit="exit"
+              className="flex flex-1 flex-col text-center text-white md:w-3/4 lg:my-6 lg:text-start lg:mx-20 lg:w-full"
+            >
+              <span className="uppercase text-sm tracking-widest leading-5 font-normal md:text-base">
+                The terminology...
+              </span>
+              <span className="uppercase text-2xl mt-4 mb-4 font-heading tracking-wider md:text-4xl lg:text-6xl">
+                {tech.name}
+              </span>
+              <span className="text-base text-textSecondary mx-5 leading-8 tracking-wide lg:mx-0 lg:text-lg">
+                {tech.description}
+              </span>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>

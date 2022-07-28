@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Header } from "../../common";
 import { TechonologyComp } from "../../components";
@@ -9,9 +10,16 @@ function Technology() {
       <div>
         <Header from={HeaderRoute.Technology} />
       </div>
-      <div className="flex flex-1 mt-6 bg-transparent">
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ ease: "easeIn", duration: 1 }}
+        animate={{
+          opacity: 1,
+        }}
+        className="flex flex-1 mt-6 bg-transparent"
+      >
         <TechonologyComp />
-      </div>
+      </motion.div>
     </div>
   );
 }

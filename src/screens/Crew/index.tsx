@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Header } from "../../common";
 import { CrewComp } from "../../components";
@@ -9,9 +10,16 @@ function Crew() {
       <div className="flex h-fit">
         <Header from={HeaderRoute.Crew} />
       </div>
-      <div className="flex flex-1 m-6 bg-transparent md:mb-0 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ ease: "easeIn", duration: 1 }}
+        animate={{
+          opacity: 1,
+        }}
+        className="flex flex-1 m-6 bg-transparent md:mb-0 overflow-hidden"
+      >
         <CrewComp />
-      </div>
+      </motion.div>
     </div>
   );
 }

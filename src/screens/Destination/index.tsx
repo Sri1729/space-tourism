@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "../../common";
 import { HeaderRoute } from "../../types";
 import { DestinationComp } from "../../components";
+import { motion } from "framer-motion";
 
 function Destination() {
   return (
@@ -9,9 +10,16 @@ function Destination() {
       <div>
         <Header from={HeaderRoute.Destination} />
       </div>
-      <div className="flex flex-1 m-6 bg-transparent">
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ ease: "easeIn", duration: 1 }}
+        animate={{
+          opacity: 1,
+        }}
+        className="flex flex-1 m-6 bg-transparent"
+      >
         <DestinationComp />
-      </div>
+      </motion.div>
     </div>
   );
 }

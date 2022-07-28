@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { crew, scalingOpacity } from "../../constants";
+import { crew, scalingOpacityVariant } from "../../constants";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const CrewComp = () => {
@@ -20,7 +20,7 @@ export const CrewComp = () => {
         <AnimatePresence exitBeforeEnter>
           <motion.div
             key={`img-${crewMem.name}`}
-            variants={scalingOpacity}
+            variants={scalingOpacityVariant}
             initial="initial"
             animate="visible"
             exit="exit"
@@ -53,7 +53,7 @@ export const CrewComp = () => {
           <AnimatePresence exitBeforeEnter>
             <motion.div
               key={`desc-${crewMem.name}`}
-              variants={scalingOpacity}
+              variants={scalingOpacityVariant}
               initial="initial"
               animate="visible"
               exit="exit"

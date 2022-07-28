@@ -126,7 +126,7 @@ export const technology = [
 ];
 
 // animation variants
-export const scalingOpacity: { [Key: string]: Variant } = {
+export const scalingOpacityVariant: { [Key: string]: Variant } = {
   visible: {
     opacity: 1,
     scale: 1,
@@ -136,7 +136,7 @@ export const scalingOpacity: { [Key: string]: Variant } = {
   exit: { opacity: 0, transition: { ease: "easeOut", duration: 0.3 } },
 };
 
-export const opacity: { [Key: string]: Variant } = {
+export const opacityVariant: { [Key: string]: Variant } = {
   visible: {
     opacity: 1,
     transition: { ease: "easeIn", duration: 0.5 },

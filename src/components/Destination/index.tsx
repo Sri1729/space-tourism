@@ -1,7 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 
-import { destinations } from "../../constants";
+import {
+  destinations,
+  opacityVariant,
+  scalingOpacityVariant,
+} from "../../constants";
 
 export const DestinationComp = () => {
   const [destination, setDestination] = useState(destinations[0]);
@@ -25,13 +29,10 @@ export const DestinationComp = () => {
           <AnimatePresence exitBeforeEnter>
             <motion.img
               key={`img-${destination.name}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ ease: "easeIn", duration: 0.5 }}
-              exit={{
-                opacity: 0,
-                transition: { ease: "easeOut", duration: 0.25 },
-              }}
+              variants={scalingOpacityVariant}
+              initial="initial"
+              animate="visible"
+              exit="exit"
               src={destination.images.webp}
               alt="moon"
               className="w-44 h-44 my-8 md:w-72 md:h-72 lg:w-96 lg:h-96"
@@ -60,13 +61,10 @@ export const DestinationComp = () => {
           <AnimatePresence exitBeforeEnter>
             <motion.div
               key={`body-${destination.name}`}
-              initial={{ opacity: 0 }}
-              transition={{ ease: "easeIn", duration: 0.5 }}
-              animate={{ opacity: 1 }}
-              exit={{
-                opacity: 0,
-                transition: { ease: "easeOut", duration: 0.25 },
-              }}
+              variants={opacityVariant}
+              initial="initial"
+              animate="visible"
+              exit="exit"
               className="flex flex-col items-center text-center text-white lg:items-start lg:text-start"
             >
               <div>

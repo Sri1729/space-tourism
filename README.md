@@ -25,10 +25,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Home](./outputImages/home.jpg)
-![Destination](./outputImages/dest.jpg)
-![Crew](./outputImages/crew.jpg)
-![Technology](./outputImages/tech.jpg)
+![Home](./outputImages/home.png)
+![Destination](./outputImages/dest.png)
+![Crew](./outputImages/crew.png)
+![Technology](./outputImages/tech.png)
 
 ### Links
 

@@ -1,3 +1,4 @@
+import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 
 import { destinations } from "../../constants";
@@ -21,11 +22,21 @@ export const DestinationComp = () => {
         {/* Image */}
 
         <div className="flex flex-1">
-          <img
-            src={destination.images.webp}
-            alt="moon"
-            className="w-44 h-44 my-8 md:w-72 md:h-72 lg:w-96 lg:h-96"
-          />
+          <AnimatePresence exitBeforeEnter>
+            <motion.img
+              key={`img-${destination.name}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ ease: "easeIn", duration: 0.5 }}
+              exit={{
+                opacity: 0,
+                transition: { ease: "easeOut", duration: 0.25 },
+              }}
+              src={destination.images.webp}
+              alt="moon"
+              className="w-44 h-44 my-8 md:w-72 md:h-72 lg:w-96 lg:h-96"
+            />
+          </AnimatePresence>
         </div>
 
         <div className="flex flex-1 flex-col items-center lg:items-start">
@@ -46,33 +57,47 @@ export const DestinationComp = () => {
           </div>
 
           {/* Body */}
-          <div className="flex flex-col items-center text-center text-white lg:items-start lg:text-start">
-            <p className="text-6xl uppercase my-5 font-heading md:text-7xl lg:text-9xl">
-              {destination.name}
-            </p>
-            <p className="text-base text-textSecondary">
-              {destination.description}
-            </p>
-          </div>
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              key={`body-${destination.name}`}
+              initial={{ opacity: 0 }}
+              transition={{ ease: "easeIn", duration: 0.5 }}
+              animate={{ opacity: 1 }}
+              exit={{
+                opacity: 0,
+                transition: { ease: "easeOut", duration: 0.25 },
+              }}
+              className="flex flex-col items-center text-center text-white lg:items-start lg:text-start"
+            >
+              <div>
+                <p className="text-6xl uppercase my-5 font-heading md:text-7xl lg:text-9xl">
+                  {destination.name}
+                </p>
+                <p className="text-base text-textSecondary">
+                  {destination.description}
+                </p>
+              </div>
 
-          {/* Divider */}
-          <div className="flex my-8 w-full border-['#383B4B'] border-b-2" />
+              {/* Divider */}
+              <div className="flex my-8 w-full border-['#383B4B'] border-b-2" />
 
-          {/* Info */}
-          <div className="flex flex-1 w-full flex-col text-textSecondary text-sm uppercase text-center md:flex-row md:justify-evenly lg:justify-start">
-            <div className="lg:text-start">
-              <p className="tracking-widest">Avg. Distance</p>
-              <p className="text-white text-3xl mt-3 mb-5 font-heading">
-                {destination.distance}
-              </p>
-            </div>
-            <div className="lg:text-start lg:ml-20">
-              <p className="tracking-widest">Est. travel time</p>
-              <p className="text-white text-3xl mt-3 font-heading">
-                {destination.travel}
-              </p>
-            </div>
-          </div>
+              {/* Info */}
+              <div className="flex flex-1 w-full flex-col text-textSecondary text-sm uppercase text-center md:flex-row md:justify-evenly lg:justify-start">
+                <div className="lg:text-start">
+                  <p className="tracking-widest">Avg. Distance</p>
+                  <p className="text-white text-3xl mt-3 mb-5 font-heading">
+                    {destination.distance}
+                  </p>
+                </div>
+                <div className="lg:text-start lg:ml-20">
+                  <p className="tracking-widest">Est. travel time</p>
+                  <p className="text-white text-3xl mt-3 font-heading">
+                    {destination.travel}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>
